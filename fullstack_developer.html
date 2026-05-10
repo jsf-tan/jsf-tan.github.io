@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joseph Tan — Full-Stack Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Joseph Tan</div>
+
+        <ul class="nav-links">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+
+        <a class="resume-btn" href="./Joseph Tan-backend.pdf" download>
+          ⬇ Download Resume
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <small>Full-Stack Engineer</small>
+
+        <h1>
+          Engineering reliable
+          software systems
+          that scale.
+        </h1>
+
+        <p>
+          Full-stack engineer with 6 years of experience designing production-grade backend systems,
+          scalable APIs, cloud-native infrastructure, and modern frontend applications.
+          Focused on reliability, distributed systems, observability, performance optimization,
+          and long-term maintainability for real-world products.
+        </p>
+      </div>
+
+      <div class="hero-card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
+          <div>
+            <div style="font-size:0.9rem;color:var(--muted);margin-bottom:6px;">Availability</div>
+            <div style="font-weight:700;color:#16a34a;">● Available for projects</div>
+          </div>
+
+          <div style="text-align:right;">
+            <div style="font-size:0.9rem;color:var(--muted);margin-bottom:6px;">Response Time</div>
+            <div style="font-weight:700;">Usually within 24h</div>
+          </div>
+        </div>
+        <div class="metric">
+          <span>Experience</span>
+          <strong>6+ Years</strong>
+        </div>
+
+        <div class="metric">
+          <span>Focus</span>
+          <strong>Full-Stack & Systems</strong>
+        </div>
+
+        <div class="metric">
+          <span>Architecture</span>
+          <strong>Distributed Systems</strong>
+        </div>
+
+        <div class="metric">
+          <span>Infrastructure</span>
+          <strong>AWS · Docker · CI/CD</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="section-head">
+        <h2>Selected Projects</h2>
+
+        <p>
+          A collection of scalable platforms, SaaS systems, and modern web applications
+          focused on reliability, architecture quality, and production performance.
+        </p>
+      </div>
+
+      <div class="projects">
+
+        <div class="project-card">
+          <div class="project-image"
+            style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop');">
+          </div>
+
+          <div class="project-content">
+            <small>Analytics Platform</small>
+
+            <h3>Cloud-based business analytics system.</h3>
+
+            <p>
+              Built for a mid-sized logistics reporting platform handling operational analytics across multiple
+              warehouses.
+              The original system struggled with slow report generation and inconsistent dashboard performance during
+              peak usage.
+            </p>
+
+            <p>
+              Redesigned the reporting pipeline using asynchronous workers, Redis caching, and optimized aggregation
+              queries.
+              Supported 120k+ reporting requests per day while reducing dashboard latency by roughly 70% and improving
+              backend stability during peak operational hours.
+            </p>
+
+            <div class="tags">
+              <div class="tag">React</div>
+              <div class="tag">Node.js</div>
+              <div class="tag">PostgreSQL</div>
+              <div class="tag">Redis</div>
+            </div>
+
+            <a class="project-link" href="https://linear.app" target="_blank">View Reference ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image"
+            style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1600&auto=format&fit=crop');">
+          </div>
+
+          <div class="project-content">
+            <small>SaaS Infrastructure</small>
+
+            <h3>Multi-tenant SaaS architecture with scalable APIs.</h3>
+
+            <p>
+              Developed for a subscription-based internal operations platform used by distributed remote teams.
+              The main challenge was maintaining stable API performance and tenant isolation as customer usage
+              increased.
+            </p>
+
+            <p>
+              Implemented event-driven backend services, queue-based processing, API versioning, and deployment
+              automation.
+              Reduced deployment failures across internal releases while supporting growing multi-tenant workloads and
+              increasing concurrent API traffic.
+            </p>
+
+            <div class="tags">
+              <div class="tag">NestJS</div>
+              <div class="tag">Kafka</div>
+              <div class="tag">AWS</div>
+              <div class="tag">Docker</div>
+            </div>
+
+            <a class="project-link" href="https://vercel.com" target="_blank">View Reference ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image"
+            style="background-image:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop');">
+          </div>
+
+          <div class="project-content">
+            <small>Developer Platform</small>
+
+            <h3>Modern frontend platform with infrastructure integration.</h3>
+
+            <p>
+              Created for a client-facing SaaS dashboard that needed a faster and more maintainable frontend
+              architecture.
+              The previous application suffered from inconsistent UI behavior, deployment friction, and slow rendering
+              performance.
+            </p>
+
+            <p>
+              Rebuilt the frontend platform with scalable component architecture, CI/CD workflows, and infrastructure
+              monitoring integration.
+              Improved frontend render performance, reduced deployment friction, and lowered infrastructure maintenance
+              overhead for active production users.
+            </p>
+
+            <div class="tags">
+              <div class="tag">Next.js</div>
+              <div class="tag">TypeScript</div>
+              <div class="tag">GraphQL</div>
+              <div class="tag">Kubernetes</div>
+            </div>
+
+            <a class="project-link" href="https://stripe.com" target="_blank">View Reference ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="expertise">
+    <div class="container">
+      <div class="section-head">
+        <h2>Engineering Expertise</h2>
+
+        <p>
+          Backend architecture, frontend systems, cloud infrastructure,
+          distributed systems thinking, and reliability engineering.
+        </p>
+      </div>
+
+      <div class="expertise-grid">
+        <div class="expertise-card">
+          <h3>Backend Architecture</h3>
+          <p>
+            Scalable APIs, event-driven systems, queue guarantees,
+            idempotency design, caching methodology, and distributed workflows.
+          </p>
+        </div>
+
+        <div class="expertise-card">
+          <h3>Frontend Engineering</h3>
+          <p>
+            Modern responsive applications using React ecosystems,
+            component architecture, accessibility, and performance optimization.
+          </p>
+        </div>
+
+        <div class="expertise-card">
+          <h3>Infrastructure & DevOps</h3>
+          <p>
+            Cloud-native deployments, CI/CD pipelines, observability stacks,
+            infrastructure automation, and scalable production environments.
+          </p>
+        </div>
+
+        <div class="expertise-card">
+          <h3>System Reliability</h3>
+          <p>
+            Monitoring systems, bottleneck analysis, fault tolerance,
+            consistency model decisions, and infrastructure resilience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <div class="section-head">
+        <h2>Experience</h2>
+
+        <p>
+          Academic background and professional engineering experience
+          across modern software systems and scalable web platforms.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div>
+            <small>Sep 2016 — Jun 2020</small>
+            <h3>University Education</h3>
+          </div>
+
+          <p>
+            Studied software engineering, algorithms, operating systems,
+            distributed systems, networking, and database architecture.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div>
+            <small>Jul 2020 — Jun 2023</small>
+            <h3>QPSoftware — Full-Stack Developer</h3>
+          </div>
+
+          <p>
+            Developed scalable applications and backend services while contributing
+            to infrastructure reliability, API development, observability tooling,
+            and production system performance.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div>
+            <small>Jul 2023 — Present</small>
+            <h3>Freelance Engineering Team</h3>
+          </div>
+
+          <p>
+            Collaborating with university engineering partners to deliver cloud-native platforms,
+            SaaS systems, frontend applications, and distributed backend solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="container">
+      <div class="section-head">
+        <h2>Client Reviews</h2>
+
+        <p>
+          Feedback from founders, clients, and collaborators on engineering quality,
+          communication, and delivery reliability.
+        </p>
+      </div>
+
+      <div class="reviews-layout">
+
+        <div class="reviews-column">
+
+          <div class="review-chat">
+            <div class="review-chat-header">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="client">
+
+              <div>
+                <h4>Sarah Kim</h4>
+                <span>Product Founder</span>
+              </div>
+            </div>
+
+            <div class="review-chat-body">
+              We thought this would be a quick frontend update and then suddenly we were fixing backend issues too.
+              Launch week was stressful honestly. Bugs kept showing up at the worst time. Still appreciated how
+              responsive Joseph stayed through all of it.
+            </div>
+          </div>
+
+          <div class="review-email">
+            <div class="review-email-header">
+              <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="client">
+
+              <div>
+                <h4>Michael Reeves</h4>
+                <span>Startup CTO</span>
+              </div>
+            </div>
+
+            <div class="review-email-subject">
+              Subject: Infrastructure & backend reliability improvements
+            </div>
+
+            <div class="review-email-body">
+              The launch period was honestly pretty chaotic. We had deployment issues, API failures, and a lot of
+              confusion internally about priorities. Deadlines moved more than once. Joseph handled the pressure well
+              and helped untangle problems one by one instead of pretending everything was fine.
+            </div>
+          </div>
+
+          <div class="review-minimal">
+            <div class="review-minimal-top">
+              <img src="https://randomuser.me/api/portraits/women/21.jpg" alt="client">
+
+              <div>
+                <h4>Olivia Bennett</h4>
+                <span>Agency Director</span>
+              </div>
+            </div>
+
+            <p>
+              The collaboration was smooth overall and communication stayed consistent throughout the project. Feedback
+              was implemented quickly, deadlines were handled professionally, and the final release went more smoothly
+              than we expected.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="reviews-column">
+
+          <div class="review-note">
+            <div class="review-note-top">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="client">
+
+              <div>
+                <h4>Daniel Foster</h4>
+                <span>SaaS Startup Owner</span>
+              </div>
+            </div>
+
+            <p>
+              There were definitely delays during testing because random API bugs kept appearing right before release.
+              It got stressful near the end honestly. But after launch, the product felt much faster and users
+              immediately noticed the improvement.
+            </p>
+          </div>
+
+          <div class="review-chat">
+            <div class="review-chat-header">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="client">
+
+              <div>
+                <h4>Emily Carter</h4>
+                <span>Technical Project Manager</span>
+              </div>
+            </div>
+
+            <div class="review-chat-body">
+              Not gonna lie, parts of the project were confusing for me at first. A few delays happened and I honestly
+              thought we might miss the deadline completely. Communication stayed good though which helped a lot.
+            </div>
+          </div>
+
+          <div class="review-email">
+            <div class="review-email-header">
+              <img src="https://randomuser.me/api/portraits/women/37.jpg" alt="client">
+
+              <div>
+                <h4>Jessica Lee</h4>
+                <span>Operations Manager</span>
+              </div>
+            </div>
+
+            <div class="review-email-subject">
+              Subject: Production system performance
+            </div>
+
+            <div class="review-email-body">
+              Launch week got pretty chaotic. Traffic exposed a bunch of stuff we missed and people were definitely
+              stressed. Things got fixed fast though and the platform stayed online somehow.
+            </div>
+          </div>
+
+          <div class="review-minimal">
+            <div class="review-minimal-top">
+              <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="client">
+
+              <div>
+                <h4>Ryan Mitchell</h4>
+                <span>Product Engineer</span>
+              </div>
+            </div>
+
+            <p>
+              One of the smoother projects we’ve worked on recently. The implementation was clean, updates were
+              communicated clearly, and most milestones were delivered on time without unnecessary complications.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2>Let’s build something scalable.</h2>
+
+      <p>
+        Available for freelance projects, remote engineering opportunities,
+        SaaS platform development, and backend architecture consulting.
+      </p>
+
+      <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:28px;">
+        <a href="https://github.com/jsf-tan" style="text-decoration:none;color:var(--muted);font-weight:600;">GitHub</a>
+        <!-- <a href="#" style="text-decoration:none;color:var(--muted);font-weight:600;">LinkedIn</a> -->
+        <a href="mailto:josephtan67@gmail.com"
+          style="text-decoration:none;color:var(--muted);font-weight:600;">Email</a>
+        <span style="color:var(--muted);font-weight:600;">Remote Worldwide</span>
+      </div>
+
+      <div class="contact-actions">
+        <a class="primary-btn" href="mailto:josephtan67@gmail.com">Contact Me</a>
+        <a class="secondary-btn" href="./Joseph Tan-backend.pdf" download>Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2023 Joseph Tan — Full-Stack Engineer</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
