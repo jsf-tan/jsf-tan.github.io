@@ -488,9 +488,15 @@ section {
 }
 
 .secondary-btn {
+    display: flex;
+    align-items: center;
     border: 1px solid var(--line);
     background: var(--surface);
     color: var(--text);
+}
+
+.git-icon {
+    margin-right: 4px;
 }
 
 footer {
